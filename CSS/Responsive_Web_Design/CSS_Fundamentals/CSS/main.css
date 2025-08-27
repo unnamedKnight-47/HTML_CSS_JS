@@ -1,0 +1,81 @@
+.card {
+    background: #000;
+    color: white;
+    width: 560px;
+    margin: auto;
+    padding: 45px;
+}
+
+h1,
+p {
+    margin-top: 0;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+p {
+    font-size: 18px;
+}
+
+.links {
+    margin-top: 40px;
+    margin-bottom: 0;
+}
+
+strong {
+    background: yellow;
+    color: black;
+}
+
+.accent-color {
+    color: #ffe600;
+}
+
+/*
+The default color of the link is blue, but we can
+modify the default color by doing the following.
+The order of the link states should by like following,
+(a:link, a:visited, a:focus, a:hover, a:active) exactly.
+Otherwise, it won't work.
+*/
+a:link {
+    color: #ffe600;
+}
+
+a:visited {
+    color: white;
+}
+
+a:focus {
+    color: aquamarine;
+}
+
+a:hover {
+    color: firebrick;
+}
+
+a:active {
+    color: plum;
+}
+
+/*
+if i just use like following, the following color value will overwrite the 
+color value for all of the different states. So the following code is
+for (default, visited, focus, hover, actives) states.
+
+So, if i just use  a { color: yellow; }
+this is going to replace the color value for all of the states.
+
+in the following way we will need to write less css code.
+
+*/
+a {
+    color: yellow;
+}
+
+a:focus,
+a:hover {
+    color: aqua;
+}
