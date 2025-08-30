@@ -1,9 +1,39 @@
+.inter-font {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+.open-sans-font {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+}
+
+
+.noto-sans-font {
+    font-family: "Noto Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+}
+
+
+
 .card {
     background: #000;
     color: white;
     width: 560px;
     margin: auto;
     padding: 45px;
+    font-family: "Inter", sans-serif;
 }
 
 h1,
@@ -83,6 +113,8 @@ a:hover {
     display: inline-block;
     margin-right: 25px;
     text-decoration: none;
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
 }
 
 .btn:hover {
