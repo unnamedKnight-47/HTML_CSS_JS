@@ -44,11 +44,11 @@ p {
 }
 
 .card {
-    width: 500px;
+    width: 450px;
     margin: auto;
     background-color: #f1f1f1;
-    text-align: center;
-    padding: 1.0em 1.5em;
+    text-align: left;
+    padding: 25px;
 }
 
 .card-img {
@@ -62,11 +62,20 @@ p {
     margin-top: 0;
     margin-bottom: 10px;
     color: #104c90;
+    font-weight: 700;
 }
 
-.card p {
-    text-align: left;
+.card-text {
+    /* reset default margins */
+    margin-bottom: 9px;
+    /* add spacing below each */
 }
+
+.card :nth-last-child(1 of .card-text) {
+    margin: 0;
+}
+
+
 
 .link {
     text-align: left;
