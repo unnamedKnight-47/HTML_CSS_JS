@@ -24,10 +24,6 @@ p {
     margin-bottom: 0;
 }
 
-strong {
-    background: yellow;
-    color: black;
-}
 
 .accent-color {
     color: #ffe600;
@@ -78,4 +74,18 @@ a {
 a:focus,
 a:hover {
     color: aqua;
+}
+
+.btn {
+    background: #ffe600;
+    color: black !important;
+    padding: .5em 2em;
+    display: inline-block;
+    margin-right: 25px;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background: white;
+    color: black !important;
 }
