@@ -7,7 +7,7 @@
 
 
 html {
-  font-family: sans-serif;
+  font-family: "Lato", sans-serif;
 
   line-height: 1.15;
 
@@ -17,10 +17,115 @@ html {
 
 }
 
-
-
 body {
   background-color: white;
   cursor: default;
   box-sizing: border-box;
+  margin: 0;
+  font-size: 18px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 0;
+}
+
+h1 {
+  margin: 0;
+  padding: 30px 0;
+  font-size: 36px;
+  color: white;
+  font-weight: bolder;
+}
+
+a:link {
+  color: #EF5839;
+}
+
+a:focus,
+a:hover {
+  color: mediumslateblue;
+}
+
+
+header {
+  background: #2E354F;
+}
+
+.section-white {
+  background: white;
+}
+
+.section-dark {
+  background: #2E354F;
+}
+
+.container {
+  margin: auto;
+  padding: 30px 20px;
+  width: 620px;
+}
+
+.container-white {
+  margin-bottom: 20px;
+}
+
+/* .container-white,
+.container-dark {
+  padding: 30px 45px;
+  width: 500px;
+} */
+
+.container-title {
+  font-size: 24px;
+  color: #EF5839;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.container-img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.container-dark-paragraph {
+  color: white;
+}
+
+.link-paragraph {
+  margin: 40px 0;
+}
+
+.btn {
+  padding: 0.6em 2em;
+  margin-right: 30px;
+  font-weight: bolder;
+  text-decoration: none;
+}
+
+.btn-accent {
+  background: #EF5839;
+  color: white !important;
+}
+
+.btn-white {
+  background: white;
+  color: black !important;
+}
+
+.btn-white:hover {
+  background: #EF5839;
+  color: black !important;
+}
+
+
+.btn-accent:hover,
+.btn-white:hover {
+  background: aquamarine;
+  color: black !important;
 }
