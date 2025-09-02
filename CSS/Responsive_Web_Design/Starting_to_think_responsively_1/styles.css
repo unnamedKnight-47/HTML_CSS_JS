@@ -2,6 +2,7 @@ body {
     margin: 0;
     color: #707070;
     background: #fff;
+    font-size: 1.125rem;
 }
 
 /* Typography*/
@@ -16,3 +17,37 @@ p {
     margin-top: 0;
 }
 
+h1 {
+    margin: 0;
+    text-align: center;
+    padding: 35px 0;
+    color: #312614;
+    font-size: 3rem;
+}
+
+.h1-span {
+    color: #b7832f;
+}
+
+h2 {
+    /* margin: 0; */
+    color: #707070;
+    font-size: 1.5rem;
+}
+
+
+.container {
+    max-width: 980px;
+    margin: auto;
+    width: 95%;
+}
+
+.elemage {
+    width: 100%;
+    object-fit: cover;
+}
+
+.columns {
+    display: flex;
+    padding: 30px 0 0 0;
+}
