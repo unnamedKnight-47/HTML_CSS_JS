@@ -1,0 +1,28 @@
+body {
+    margin: 0;
+    background: #f8f8f8;
+    font-size: 1rem;
+    font-family: "Ubuntu";
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li {
+    margin-top: 0;
+}
+
+h1 {
+    color: #1792d2;
+    font-size: 3.375rem;
+    font-family: "Lora", sans-serif;
+}
+
+ul {
+    list-style: none;
+}
