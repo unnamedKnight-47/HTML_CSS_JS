@@ -1,9 +1,10 @@
 body {
     margin: 0;
-    background: #f8f8f8;
     font-size: 1rem;
     font-family: "Ubuntu";
 }
+
+/*************** Typorgraphy***************/
 
 h1,
 h2,
@@ -18,27 +19,77 @@ li {
 }
 
 h1 {
-    color: #1792d2;
-    font-size: 3.375rem;
+    margin: 0;
+    color: #143774;
+    font-size: 2rem;
     font-family: "Lora", sans-serif;
+    font-weight: 400;
+}
+
+ul{
+    margin: 0;
+}
+
+.subtitle{
+    font-weight: bold;
+    color: #1792d2;
+    font-size: 0.75rem;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+
+/***************Layout***************/
+
+.container{
+    width: 90%;
+    max-width: 980px;
+    margin: auto;
+}
+
+.container-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 header {
-    text-align: center;
+   background: #f8f8f8;
+   padding: 2em 0;
 }
 
+
+/***************Navigation & links***************/
 nav ul {
     list-style: none;
     padding: 0;
     display: flex;
     justify-content: center;
+    text-transform: uppercase;
 }
 
 nav li {
-    margin: 0 1em;
+    margin-left: 2em;
 }
 
-nav a {}
+nav a {
+    text-decoration: none;
+    color: #707070;
+    font-weight: 700;
+    padding-bottom: 0.25em;
+}
+
 
 nav a:hover,
-nav a:focus {}
+nav a:focus {
+    color: #1792d2;
+}
+
+.current-page{
+    border-bottom: 3px #707070 solid;
+}
+
+.current-page:hover,
+.current-page:focus{
+    color: #707070;
+}
