@@ -40,7 +40,6 @@ ul{
 
 
 /***************Layout***************/
-
 .container{
     width: 90%;
     max-width: 980px;
@@ -96,18 +95,18 @@ nav a:focus {
 }
 
 @media (max-width: 675px){
+
    header{
     text-align: center;
    }
 
-    .container-nav{
+    .container-nav,
+    nav ul{
         flex-direction: column;
         justify-content: center;
     }
 
     nav ul{
-        flex-direction: column;
-        justify-content: center;
         padding: 0.5em 0;
     }
 
@@ -115,5 +114,4 @@ nav a:focus {
         margin: 0;
         margin-top: 1.5em;
     }
-
 }
