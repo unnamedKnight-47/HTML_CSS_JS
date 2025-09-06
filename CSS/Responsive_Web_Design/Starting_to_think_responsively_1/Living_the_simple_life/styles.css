@@ -5,7 +5,9 @@ body {
     font-weight: 300;
 }
 
-/*************** Typorgraphy***************/
+/*=======================================*/
+/*             Typorgraphy               */
+/*=======================================*/
 
 h1,
 h2,
@@ -30,9 +32,6 @@ h1 {
     font-size: 2rem;
 }
 
-.article-title{
-    font-size: 1.5rem;
-}
 
 strong{
     font-weight: 700;
@@ -43,6 +42,20 @@ ul{
     margin: 0;
 }
 
+
+header {
+   background: #f8f8f8;
+   padding: 2.5em 0;
+}
+
+.article-info{
+    font-size: 0.875rem;
+}
+
+.article-title{
+    font-size: 1.5rem;
+}
+
 .subtitle{
     font-weight: bold;
     color: #1792d2;
@@ -51,7 +64,13 @@ ul{
     text-transform: uppercase;
 }
 
-/*links*/
+.article-body{
+    color: #707070;
+
+}
+
+/*************links*****************/
+/***********************************/
 a{
     color:#1792d2 !important;
     text-decoration: none;
@@ -62,12 +81,27 @@ a:hover, a:focus{
     text-decoration: underline;
 }
 
+.article-read-more{
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    color: #1792d2 !important;
+    font-weight: bold;
+    text-decoration: none;
+}
 
 
+.article-read-more:hover,
+.article-read-more:focus
+{
+    color: #143774 !important;
+    text-decoration: underline;
+}
 
+/**************************************/
 
-
-/***************Layout***************/
+/*=======================================*/
+/*                Layout                 */
+/*=======================================*/
 .container{
     width: 90%;
     max-width: 980px;
@@ -80,13 +114,8 @@ a:hover, a:focus{
     align-items: center;
 }
 
-header {
-   background: #f8f8f8;
-   padding: 2.5em 0;
-}
-
-
-/***************Navigation & links***************/
+/***************Navigation & Navigation links***************/
+/***********************************************************/
 nav ul {
     list-style: none;
     padding: 0;
@@ -144,30 +173,4 @@ nav a:focus {
     }
 }
 
-
-/***************article styles*********************/
-
-.article-body{
-    color: #707070;
-
-}
-
-.article-read-more{
-    font-size: 0.875rem;
-    text-transform: uppercase;
-    color: #1792d2 !important;
-    font-weight: bold;
-    text-decoration: none;
-}
-
-
-.article-read-more:hover,
-.article-read-more:focus
-{
-    color: #143774 !important;
-    text-decoration: underline;
-}
-
-.article-info{
-    font-size: 0.875rem;
-}
+/***************Navigation & Navigation links End********************/
