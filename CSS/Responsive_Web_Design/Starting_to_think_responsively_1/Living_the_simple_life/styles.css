@@ -1,7 +1,8 @@
 body {
     margin: 0;
-    font-size: 1rem;
-    font-family: "Ubuntu";
+    font-size: 1.125rem;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 300;
 }
 
 /*************** Typorgraphy***************/
@@ -17,14 +18,26 @@ ul,
 li {
     margin-top: 0;
 }
+h1, h2, h3{
+    font-family: "Lora", sans-serif;
+    color: #143774;
+    font-weight: 400;
+}
+
 
 h1 {
     margin: 0;
-    color: #143774;
     font-size: 2rem;
-    font-family: "Lora", sans-serif;
-    font-weight: 400;
 }
+
+.article-title{
+    font-size: 1.5rem;
+}
+
+strong{
+    font-weight: 700;
+}
+
 
 ul{
     margin: 0;
@@ -37,6 +50,21 @@ ul{
     margin: 0;
     text-transform: uppercase;
 }
+
+/*links*/
+a{
+    color:#1792d2 !important;
+    text-decoration: none;
+}
+
+a:hover, a:focus{
+    color:#143774 !important;
+    text-decoration: underline;
+}
+
+
+
+
 
 
 /***************Layout***************/
@@ -114,4 +142,32 @@ nav a:focus {
         margin: 0;
         margin-top: 1.5em;
     }
+}
+
+
+/***************article styles*********************/
+
+.article-body{
+    color: #707070;
+
+}
+
+.article-read-more{
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    color: #1792d2 !important;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+.article-read-more:hover,
+.article-read-more:focus
+{
+    color: #143774 !important;
+    text-decoration: underline;
+}
+
+.article-info{
+    font-size: 0.875rem;
 }
