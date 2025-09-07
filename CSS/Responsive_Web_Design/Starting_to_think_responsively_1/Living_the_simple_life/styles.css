@@ -3,6 +3,7 @@ body {
     font-size: 1.125rem;
     font-family: "Ubuntu", sans-serif;
     font-weight: 300;
+    line-height: 1.6;
 }
 
 img{
@@ -142,11 +143,13 @@ a:hover, a:focus{
 }
 
     main{
-        width: 75%;
+        width: 70%;
     }
 
     aside{
-        width: 20%;
+        width: 25%;
+        min-width: 200px;
+        margin-left: 1em;
     }
 
 }
@@ -261,6 +264,48 @@ nav a:focus {
     .crp-left{
         object-position: left;
     }
+}
 
+/* widgets*/
+.widget-title{
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    line-height: 1.4;
+}
+
+.widget-body{
+    margin-top: 1.5em;
+    font-size: 1rem;
+}
+
+.sidebar-widget{
+    border: 20px solid #efefef;
+    padding: 1em;
+    margin-bottom: 3em;
 
 }
+
+.widget-recent-post{
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid #707070;
+}
+
+.widget-recent-post:last-child{
+    border-bottom: 0;
+}
+
+.widget-recent-post-title{
+    font-size: 1rem;
+    order: 5;
+    line-height: 1.4;
+}
+
+.widget-image{
+    order: 2;
+    margin: 1em 0;
+}
+
+
