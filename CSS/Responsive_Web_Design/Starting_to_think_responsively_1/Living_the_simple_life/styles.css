@@ -130,6 +130,11 @@ a:hover, a:focus{
     justify-content: center;
 }
 
+.nav-list-item{
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
 @media (min-width: 675px) {
 
 
