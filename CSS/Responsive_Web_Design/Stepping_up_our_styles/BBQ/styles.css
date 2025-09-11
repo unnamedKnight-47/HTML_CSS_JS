@@ -66,6 +66,8 @@ intro
     background-position: center;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    min-height: 50vh;
 }
 
 .main-content{
