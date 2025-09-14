@@ -83,6 +83,27 @@ intro
 }
 
 
+.email-collector{
+    width: 80%;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+input, .btn-primary{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 0.5em;
+    font-family: inherit;
+    border: 1px solid #404040;
+    border-radius: 5px;
+}
+
+input{
+    padding: .25em;
+    border-radius: 5px;
+    border: 1px solid #404040;
+}
+
 
 @media (min-width: 500px) {
     body{
