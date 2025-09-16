@@ -41,6 +41,9 @@ strong{
     color: #f18119;
     text-transform: uppercase;
     order: -1;
+    border-top: 5px solid #ff713b;
+    padding-top: 5px;
+    border-image: linear-gradient( to left, #ff713b, #ffa51d) 1;
 }
 
 /* .sub-title{
@@ -57,10 +60,12 @@ intro
 =============*/
 
 .intro{
-    background-color: #404040;
-    background-image: url(images/dark-ribs.jpg);
+    /* background-color: #404040; */
+    background-image: url(images/ribs.jpg), linear-gradient(45deg, red, blue);
+    background-blend-mode: multiply;
     color: white;
     padding: .5em 2em;
+    padding-top: 0;
     /* max-width: 100%; */
     background-size: cover;
     background-position: center;
@@ -80,6 +85,7 @@ intro
     flex-direction: column;
     justify-content: space-between;
     min-height: 50vh;
+    align-items: center;
 }
 
 
@@ -89,7 +95,7 @@ intro
     margin: 0 auto;
 }
 
-input, .btn-primary{
+input, .btn{
     width: 100%;
     text-align: center;
     margin-bottom: 0.5em;
@@ -102,6 +108,37 @@ input{
     padding: .25em;
     border-radius: 5px;
     border: 1px solid #404040;
+    transform: scale(1);
+    transition: transform .25s;
+
+}
+
+input:focus{
+    transform: scale(1.1);
+    outline: none;
+}
+
+.btn{
+    display: inline-block;
+    padding: 0.75em 0;
+    font-size: 0.625rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border: 0;
+    cursor: pointer;
+}
+
+.btn-primary{
+    background-image: linear-gradient(to left, #ff713b, #ffa51d);
+    color: white;
+    transform: scale(1);
+    transition: transform .25s, color .25s;
+}
+
+.btn-primary:hover{
+    transform: scale(1.1);
+    color: #404040;
 }
 
 
