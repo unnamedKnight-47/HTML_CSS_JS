@@ -11,14 +11,11 @@ body{
 
 .flex-container{
     border: 10px solid #f9f871;
-    max-width: 600px;
+    /* max-width: 600px; */
     margin: 0 auto;
-    min-height: 50vh;
-    display: flex;
+    width: 80%;
     padding: .25em;
-    flex-direction: column;
-    justify-content: space-between ;
-    /* align-items: center; */
+    display: flex;
 }
 
 .flex-item{
@@ -26,4 +23,17 @@ body{
     margin: .5em;
     padding: .5em;
     color: #424656;
+}
+
+.flex-item-1{
+    background: plum;
+    flex-grow: 1;
+}
+
+
+.flex-item-2{
+    background: mediumslateblue;
+    flex-grow: 2;
+    color: white;
+    font-weight: 700;
 }
