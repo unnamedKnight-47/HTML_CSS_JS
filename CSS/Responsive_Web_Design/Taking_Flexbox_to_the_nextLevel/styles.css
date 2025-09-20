@@ -13,11 +13,15 @@ body{
     border: 10px solid #f9f871;
     max-width: 600px;
     margin: 0 auto;
+    min-height: 50vh;
     display: flex;
     padding: .25em;
+    flex-direction: column;
+    justify-content: space-between ;
+    /* align-items: center; */
 }
 
-.flex-itme{
+.flex-item{
     background: #8bee86;
     margin: .5em;
     padding: .5em;
