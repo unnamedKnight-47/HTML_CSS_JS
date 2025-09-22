@@ -1,0 +1,48 @@
+*{
+    box-sizing: border-box;
+}
+
+/*  */
+
+body{
+    margin: 0;
+    background: #111D4A;
+    font-size: 16px;
+    color:white;
+}
+
+img{
+    display: block;
+    width: 100%;
+}
+
+h1, h2, h3,h4, h5, h6, p, li {
+    margin-top: 0;
+}
+
+.card{
+    width: 90%;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+
+.card-title,
+.card-btn
+.card-read-time{
+    font-family: "Blinker", sans-serif;
+}
+
+.card-title{
+    color: #05CBE9;
+    font-size: 1.75rem;
+}
+
+.card-body{
+    font-size: 1rem;
+}
+
+.card-btn{
+    font-size: 1.25rem;
+}
+
