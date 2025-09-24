@@ -11,11 +11,10 @@ body{
 
 .card-img{
     display: block;
-    /* width: 100%; */
-     min-width: 0;
-     min-height: 0;
+    max-width: 100%;
+    min-width: 0;
+    min-height: 0;
     object-fit: cover;
-    /* height: 200px; */
     flex-basis: 200px;
 }
 
