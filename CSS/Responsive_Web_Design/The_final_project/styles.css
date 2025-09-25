@@ -4,8 +4,11 @@
 
 body{
     margin: 0;
-    background: #000000;
-    color: #FFF;
+    /* background: #000000; */
+    color: #404040;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
 }
 
 img{
@@ -16,4 +19,51 @@ img{
 
 h1, h2, h3, h4, h5, h6, li{
     margin-top: 0;
+}
+
+h1, h2, strong{
+    font-weight: 700;
+}
+
+.hero-title{
+    font-size: 1.5rem;
+    line-height: 1.4;
+    margin: 0;
+}
+
+.accent-color{
+    color: #ffe600;
+}
+
+.btn{
+   padding: .5em 1.75em;
+   font-weight: 700;
+   text-decoration: none;
+}
+
+.btn-primary{
+   background: #ffe600;
+   color: #000;
+   justify-self: start;
+   margin-top: .5em;
+
+}
+
+/*======================================================
+                    hero area
+=======================================================*/
+
+.hero{
+    display: grid;
+
+    grid-template-columns: minmax(1em, 1fr) minmax(260px, 500px) minmax(1em, 1fr);
+
+    background-image: url(img/hero-bg.jpg);
+    color: #fff;
+    padding: 4em 0;
+}
+
+/*! BE CLEAR ABOUT WHAT THE FOLLOWING SELECTOR DOES */
+.hero > *{
+    grid-column: 2 / 3;
 }
