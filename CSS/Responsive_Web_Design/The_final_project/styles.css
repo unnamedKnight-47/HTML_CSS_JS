@@ -53,11 +53,14 @@ h1, h2, strong{
                     hero area
 =======================================================*/
 
-.hero{
+
+.main-grid{
     display: grid;
 
     grid-template-columns: minmax(1em, 1fr) minmax(260px, 500px) minmax(1em, 1fr);
+}
 
+.hero{
     background-image: url(img/hero-bg.jpg);
     color: #fff;
     padding: 4em 0;
@@ -66,4 +69,74 @@ h1, h2, strong{
 /*! BE CLEAR ABOUT WHAT THE FOLLOWING SELECTOR DOES */
 .hero > *{
     grid-column: 2 / 3;
+}
+
+
+/*======================================================
+                    info area
+=======================================================*/
+
+.info{
+    padding: 4em 0;
+}
+
+.section-title{
+    font-size: 18px;
+    margin: 0;
+    color: #000;
+    margin-top: 1.25em;
+}
+
+.col{
+    text-align: center;
+    grid-column: 2 / 3;
+}
+
+
+
+/*======================================================
+                    footer area
+=======================================================*/
+
+.footer{
+    background: #ebebeb;
+    padding: 4em 0;
+    text-align: center;
+}
+
+.footer-main,
+.social-list{
+    grid-column: 2 / 3;
+}
+
+.social-list{
+    order: -1;
+    list-style: none;
+    margin: 0 0 2em;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    /* align-items: center; */
+}
+
+.footer-logo{
+    margin:0 auto;
+}
+
+.social-link{
+}
+
+.social-link{
+    text-decoration: none;
+}
+
+.footer-text,
+.footer-fineprint{
+    opacity: .4;
+}
+
+.footer-fineprint{
+    margin-top: 3em;
+    font-size: .75rem;
 }
