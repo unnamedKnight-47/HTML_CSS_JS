@@ -58,18 +58,44 @@ h1, h2, strong{
     display: grid;
 
     grid-template-columns: minmax(1em, 1fr) minmax(260px, 500px) minmax(1em, 1fr);
+
+    column-gap: 2em;
+}
+
+
+@media (min-width: 600px)
+{
+    .main-grid{
+        grid-template-columns: minmax(1em, 1fr) repeat(3, minmax(150px, 320px)) minmax(1em, 1fr);
+    }
 }
 
 .hero{
     background-image: url(img/hero-bg.jpg);
+    background-size: cover;
+    /* background-repeat: no-repeat; */
+    background-position: center;
+    /* background-color: #000; */
     color: #fff;
-    padding: 4em 0;
+    padding: 6em 0;
 }
 
 /*! BE CLEAR ABOUT WHAT THE FOLLOWING SELECTOR DOES */
 .hero > *{
     grid-column: 2 / 3;
 }
+
+
+@media (min-width: 600px)
+{
+    .her{
+        padding: 6em 0;
+    }
+    .hero > *{
+        grid-column: 2 / span 2;
+    }
+}
+
 
 
 /*======================================================
@@ -91,6 +117,19 @@ h1, h2, strong{
     text-align: center;
     grid-column: 2 / 3;
 }
+
+@media (min-width: 600px )
+{
+    .col{
+        grid-column: span 1;
+    }
+
+    .col:first-child {
+        grid-column: 2 / span 1;
+    }
+
+}
+
 
 
 
@@ -139,4 +178,26 @@ h1, h2, strong{
 .footer-fineprint{
     margin-top: 3em;
     font-size: .75rem;
+}
+
+@media (min-width: 600px)
+{
+    .footer-main{
+        grid-column: 2 / span 2;
+        text-align: start;
+        justify-self: start;
+    }
+
+    .footer-logo{
+        margin:0;
+    }
+
+    .social-list{
+        grid-column: 4 / span 1;
+        grid-row: 1/ span 1;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+
 }
