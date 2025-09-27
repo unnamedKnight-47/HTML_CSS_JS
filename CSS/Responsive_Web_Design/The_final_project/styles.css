@@ -75,6 +75,7 @@ h1, h2, strong{
     bottom: 0;
     right: 0;
     left: 0;
+    border: 2px solid magenta;
 }
 
 .nav-list{
@@ -82,7 +83,6 @@ h1, h2, strong{
     list-style: none;
     margin:0;
     padding: 0;
-    border: 2px solid magenta;
     height: 100%;
     align-items: center;
     justify-content: space-around;
@@ -99,6 +99,17 @@ h1, h2, strong{
 .nav-link:hover,
 .nav-link:focus{
     color:#ffe600;
+}
+
+.close-nav{
+    border:0;
+    background: 0;
+    color: #ffe600;
+    font-weight: 700;
+    font-size: 3rem;
+    cursor: pointer;
+    padding: .5em;
+    position: absolute;
 }
 
 
