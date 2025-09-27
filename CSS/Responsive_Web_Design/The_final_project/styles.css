@@ -82,6 +82,7 @@ h1, h2, strong{
     */
     /* border: 2px solid magenta; */
     transform: translateX(0);
+    transition: transform 250ms;
 }
 
 .navigation-open{
@@ -120,6 +121,16 @@ h1, h2, strong{
     cursor: pointer;
     padding: .5em;
     position: absolute;
+}
+
+.open-nav{
+    border: 0;
+    background: 0;
+    color: #FFF;
+    cursor: pointer;
+    padding: .5em;
+    margin-left: auto;
+    font-size: 1.5em;
 }
 
 
