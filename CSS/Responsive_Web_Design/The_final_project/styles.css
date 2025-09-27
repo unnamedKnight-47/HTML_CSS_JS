@@ -71,11 +71,21 @@ h1, h2, strong{
 .nav{
     position: absolute;
     background: #000;
+    width: 100%;
     top: 0;
     bottom: 0;
     right: 0;
-    left: 0;
-    border: 2px solid magenta;
+    left: 100%;
+    /*
+    what happenes when we set left 100% on an element that is positioned absolute?
+    Clear your confusions about position: absolute;
+    */
+    /* border: 2px solid magenta; */
+    transform: translateX(0);
+}
+
+.navigation-open{
+    transform: translateX(-100%);
 }
 
 .nav-list{
