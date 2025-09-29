@@ -1,0 +1,57 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    background: blue;
+    color: white;
+}
+
+.container{
+    margin: 2.5rem auto;
+    width: 50%;
+}
+
+.timeline-grid{
+    display: grid;
+    grid-template-columns: 1fr 5px 1fr;
+    column-gap: 20px;
+
+}
+
+
+.timeline-date{
+    justify-self: end;
+}
+
+.timeline-date.right{
+    justify-self: start;
+}
+
+.timeline-description{
+    /* background: blue; */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+
+}
+
+.timeline-middle{
+    background:white;
+    position: relavtive;
+}
+
+
+.circle{
+    position: absolute;
+    height:22px;
+    width: 22px;
+    background: white;
+    border-radius: 50%;
+    /* width: 100%; */
+    transform: translateX(-8px);
+}
