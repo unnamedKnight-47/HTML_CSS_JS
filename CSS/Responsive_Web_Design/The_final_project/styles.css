@@ -63,6 +63,7 @@ h1, h2, strong{
     grid-column: 2 / -2;
 }
 
+
 .logo-link{
     background-color: #ffe600;
     padding-top: 2em;
@@ -133,6 +134,45 @@ h1, h2, strong{
     font-size: 1.5em;
 }
 
+@media(min-width: 600px)
+{
+    .open-nav,
+    .close-nav{
+        /* visibility: hidden; */
+        display: none;
+    }
+
+   .nav{
+    position: initial;
+    /* justify-content: flex-end; */
+   }
+
+   .nav-list{
+    flex-direction: row;
+    justify-content: flex-start;
+   }
+
+   .nav-item{
+    margin-left: 3em;
+   }
+
+   .nav-link{
+    font-size: 1rem;
+   }
+
+
+.header-home{
+        background: transparent;
+        position: absolute;
+        width: 100%;
+    }
+
+    .header-home .nav{
+        background: transparent;
+    }
+
+}
+
 
 /*======================================================
                     hero area
@@ -146,6 +186,7 @@ h1, h2, strong{
 
     column-gap: 2em;
 }
+
 
 
 @media (min-width: 600px)
@@ -162,19 +203,20 @@ h1, h2, strong{
     background-position: center;
     /* background-color: #000; */
     color: #fff;
-    padding: 6em 0;
+    padding: 8em 0 4em;
 }
 
 /*! BE CLEAR ABOUT WHAT THE FOLLOWING SELECTOR DOES */
 .hero > *{
     grid-column: 2 / 3;
+    margin-right: 20%;
 }
 
 
 @media (min-width: 600px)
 {
-    .her{
-        padding: 6em 0;
+    .hero{
+        padding: 10em 0 ;
     }
     .hero > *{
         grid-column: 2 / span 2;
