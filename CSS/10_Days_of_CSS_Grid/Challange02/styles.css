@@ -1,0 +1,44 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+}
+
+.container{
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: 200px;
+}
+
+.wrapper{
+    display: grid;
+    /* grid-template-columns: repeat(4, minmax(100px, 180px)); */
+    /* grid-auto-rows: 1fr; */
+    grid-template-columns: repeat(4, auto);
+    gap: 10px;
+}
+
+.box{
+    /* height: 200px;
+    width: 200px; */
+    padding: 1.5em 1.5em;
+}
+
+.blue{
+    background: blue;
+    color: white;
+    font-size: 2em;
+    font-weight: 700;
+    text-align: center;
+}
+
+.black{
+    background: black;
+    color: white;
+    font-size: 2em;
+    font-weight: 700;
+    text-align: center;
+}
+
