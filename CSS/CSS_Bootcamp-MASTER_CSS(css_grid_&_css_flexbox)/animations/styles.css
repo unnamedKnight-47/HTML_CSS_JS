@@ -9,7 +9,44 @@ body{
 .box{
     height: 200px;
     width: 200px;
-    margin: 0 auto;
-    margin-top: 300px;
+    /* margin: 0 auto; */
+    /* margin-top: 300px; */
     background-color: blueviolet;
+    position:relative;
+    animation: anim 4s infinite;
+}
+
+@keyframes anim{
+    0%{
+        left: 0;
+        top: 0;
+        background-color: aquamarine;
+    }
+
+    25%{
+        left: 300px;
+        /* top: 200px; */
+        top: 0;
+        background-color:yellowgreen;
+    }
+
+    50%{
+        left: 300px;
+        top: 300px;
+        background-color: midnightblue;
+    }
+
+    75%{
+        left: 0px;
+        top: 300px;
+        background-color: blueviolet;
+
+    }
+
+    100%{
+        left: 0px;
+        top: 0px;
+        background-color: aquamarine;
+
+    }
 }
