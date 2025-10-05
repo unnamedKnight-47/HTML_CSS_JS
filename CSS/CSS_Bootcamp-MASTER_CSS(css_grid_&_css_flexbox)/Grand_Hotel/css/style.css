@@ -10,6 +10,10 @@ body {
 }
 /* end of common styles */
 
+h1, h2, h3, h4, h5, h6, li{
+    margin-top: 0;
+}
+
 ul{
     list-style: none;
     margin: 0;
@@ -75,12 +79,146 @@ ul{
     /* color: mediumslateblue; */
 }
 
-
 .year{
     color: #555;
+    font-size: .75rem;
+}
+
+.navigation{
+    margin-left: 5rem;
+    position: fixed;
+    width: 25rem;
+    height: 100%;
+    background: linear-gradient(to top, rgba(34, 32, 41, 1),
+    rgba(34, 32, 41, .8)), url("../img/nav-bg.jpeg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navigation-header{
+    margin-top: 1.5rem;
+}
+
+.navigation-heading{
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 2rem;
+    font-weight: 300;
+    color: #deaa86;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.navigation-search{
+    position: relative;
+}
+
+.navigation-search-input{
+    width: 18rem;
+    padding: .725rem 2rem;
+    background: rgba(0, 0, 0, .3);
+    border-radius: 100px;
+    font-family: "Josefin Sans", sans-serif;
+    color: #deaa86;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    outline: none;
+    border: 1px solid #555;
+}
+
+.navigation-search-input:focus{
+    background: rgba(0, 0, 0, .1);
+}
+
+.navigation-search-btn{
+    border: none;
+    background: transparent;
+    color: #deaa86;
+    font-size: 1.5rem;
+    padding: 0;
+    font-weight: 700;
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.navigation-search-btn:focus{
+    outline: none;
+}
+
+.navigation-list{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+
+}
+
+.navigation-list li{
+    /* text-align: center; */
+    margin-bottom: 2em;
+}
+
+.navigation-item{
+    position: relative;
+}
+
+.navigation-link{
+    text-decoration: none;
+    color: white;
+    font-weight: 400;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 1.125rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: color .3s;
+}
+
+.navigation-link::before{
+    content: "";
+    /* width: 1.75rem; */
+    width: 0;
+    height: 1px;
+    background: #deaa86;
+    position: absolute;
+    top: 8px;
+    left: -40px;
+    transition: width .3s;
 }
 
 
+.navigation-link::after{
+    content: "";
+    /* width: 1.75rem; */
+    width: 0;
+    height: 1px;
+    background: #deaa86;
+    position: absolute;
+    top: 8px;
+    right: -40px;
+    transition: width .3s;
+}
+
+.navigation-link:hover,
+.navigation-link:focus{
+    color: #deaa86;
+}
+
+.navigation-link:hover::before,
+.navigation-link:hover::after{
+    width: 1.75rem;
+}
+
+.copyright{
+    color: #fff;
+    font-size: 0.75rem;
+}
 
 /* end of navbar styles */
 
