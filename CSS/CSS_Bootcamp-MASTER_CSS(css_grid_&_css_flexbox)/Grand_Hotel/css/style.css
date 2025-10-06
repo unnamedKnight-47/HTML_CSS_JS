@@ -64,6 +64,7 @@ ul{
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    z-index: 10;
 }
 
 .social-link{
@@ -85,9 +86,12 @@ ul{
 }
 
 .navigation{
+    /* visibility: hidden; */
+    /* opacity: 0; */
     margin-left: 5rem;
     position: fixed;
     width: 25rem;
+    left: -25rem;
     height: 100%;
     background: linear-gradient(to top, rgba(34, 32, 41, 1),
     rgba(34, 32, 41, .8)), url("../img/nav-bg.jpeg");
@@ -97,6 +101,9 @@ ul{
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    pointer-events: none;
+    /* transition: opacity 0.8s ease, visibility .8s ease; */
+    transition: left .8s ease;
 }
 
 .navigation-header{
@@ -221,6 +228,18 @@ ul{
 }
 
 /* end of navbar styles */
+
+.checkbox{
+    display: none;
+}
+
+.checkbox:checked ~.navigation{
+    /* opacity: 1;
+    visibility: visible; */
+    left: 0rem;
+    pointer-events: auto;
+}
+
 
 
 
