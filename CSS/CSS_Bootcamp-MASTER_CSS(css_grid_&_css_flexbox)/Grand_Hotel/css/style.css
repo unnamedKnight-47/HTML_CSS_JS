@@ -10,7 +10,7 @@ body {
 }
 /* end of common styles */
 
-h1, h2, h3, h4, h5, h6, li{
+h1, h2, h3, h4, h5, h6, li, p{
     margin-top: 0;
 }
 
@@ -82,7 +82,7 @@ ul{
 
 .year{
     color: #555;
-    font-size: .75rem;
+   font-size: .75rem;
 }
 
 .navigation{
@@ -245,12 +245,87 @@ ul{
     margin-left: 5rem;
 }
 
+.header{
+    height: 100vh;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.6),
+    rgba(0, 0, 0, 0.5)), url("../img/header-1.jpeg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.brand{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.hotel-heading{
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 1.75rem;
+    font-weight: 400;
+    color: #deaa86;
+    letter-spacing: 1px;
+    margin-bottom: 0;
+
+}
+
+.banner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    color: white;
+}
+
+.banner-heading{
+    font-size: 4.5rem;
+    font-weight: 400;
+    /* color:#deaa86; */
+    animation: anim 2s;
+}
+
+.banner-paragraph{
+    font-size: 2.125rem;
+    font-weight: 300;
+    animation: anim 1.5s .5s backwards;
+}
+
+.banner-button{
+    outline: none;
+    border: none;
+    width: 13.125rem;
+    font-size: 1.25rem;
+    /* font-weight: bold; */
+    cursor: pointer;
+    padding: .725em 1.5em;
+    border-radius: 100px;
+    background: linear-gradient(to right,gold, goldenrod);
+    color: #333;
+    letter-spacing: 1px;
+    transition: background .3s;
+    animation: anim 1s 1s backwards;
+}
+
+.banner-button:hover,
+.banner-button:focus{
+    background: linear-gradient(to left,gold, goldenrod);
+}
+
+.banner-button:active{
+    transform: translateY(2px);
+}
 
 
-
-
-
-
+@keyframes anim{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
 
 
 
