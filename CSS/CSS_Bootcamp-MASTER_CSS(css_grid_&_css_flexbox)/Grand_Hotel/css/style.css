@@ -328,6 +328,141 @@ ul{
 }
 
 
+/* about use section */
+
+.about-us{
+   display: flex;
+}
+
+.about-us-content,
+.about-us-images{
+    flex: 0 1 50%;
+}
+
+.about-us-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 6.25em;
+}
+
+.about-us-heading{
+    font-weight: 300;
+    font-size: 3.25rem;
+    font-family: "Josefin Sans", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #555;
+    margin-bottom: .625em;
+}
+
+.small-underline{
+    width: 5.75rem;
+    height: 1px;
+    background: #b85d1c;
+    margin: 0 auto;
+    margin-bottom: .75rem;
+
+}
+
+.big-underline{
+    width: 12.5rem;
+    height: 1px;
+    background: #b85d1c;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+}
+
+
+.sub-heading{
+    font-size: 2.25rem;
+    font-weight: 300;
+    color: #b85d1c;
+}
+
+.about-us-paragraph{
+    font-style: italic;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 3.25rem;
+    letter-spacing: 1px;
+    line-height: 1.5;
+}
+
+.about-us-button{
+    outline: none;
+    border: 1px #b85d1c solid;
+    cursor: pointer;
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    letter-spacing: 1px;
+    padding: 1rem 1.5rem;
+    text-transform: uppercase;
+    background: white;
+    /* background: #b85d1c; */
+    color: #b85d1c;
+    transition: background .5s, color .5s;
+
+}
+
+
+.about-us-button:hover,
+.about-us-button:focus
+{
+    border: none;
+    background: #b85d1c;
+    color: white;
+}
+
+.about-us-images{
+    position: relative;
+}
+
+.img{
+    width: 320px;
+    position: absolute;
+    display: block;
+    top:50%;
+    left: 50%;
+    box-shadow: 0 2rem 4rem rgba(0, 0, 0, .4);
+    border-radius: 4px;
+    border: 2px solid #b85d1c;
+}
+
+
+.img-1{
+    transform: translate(-20%, -90%);
+}
+
+.img-2{
+    transform: translate(-70%, -70%);
+}
+
+.img-3{
+    transform: translate(-50%, -50%);
+}
+
+.img-4{
+    transform: translate(-30%, -30%);
+}
+
+/*  end of about us section*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
