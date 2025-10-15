@@ -566,7 +566,16 @@ img{
 /* end of room section */
 /****************************************************/
 
+/* start of customers section */
+.customers{
+    margin-top: 3rem;
+}
 
+.customers-paragraph{
+    margin-top: 4rem;
+}
+
+/* end of customers section */
 
 
 
