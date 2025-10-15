@@ -569,11 +569,59 @@ img{
 /* start of customers section */
 .customers{
     margin-top: 3rem;
+    background: #15141b;
+    padding: 4.375rem 0;
 }
 
 .customers-paragraph{
-    margin-top: 4rem;
+    color: white;
+    font-size: 1.125rem;
+    margin: 4rem auto 6rem auto;
+    width: 50%;
+    text-align: center;
 }
+
+.customers-card-wrapper{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.customer-card{
+    background: #eee;
+    width: 37.5rem;
+    display: flex;
+}
+
+.customer-img-wrapper{
+    align-self: center;
+}
+
+.customer-img{
+    max-width: 12.5rem;
+    margin-left: -1rem;
+}
+
+.customer-info{
+    padding: 0 1.25rem;
+}
+
+.customer-fullname{
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-bottom: 0;
+    margin-top: 1rem;
+}
+
+.customer-paragraph-1{
+    font-size: .75rem;
+    color: #b85d1c;
+}
+
+.customer-paragraph-2{
+    font-size: .825rem;
+    color: #15141b;
+}
+
 
 /* end of customers section */
 
