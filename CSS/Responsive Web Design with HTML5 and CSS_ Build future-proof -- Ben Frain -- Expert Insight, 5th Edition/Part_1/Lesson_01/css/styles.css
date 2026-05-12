@@ -1,0 +1,98 @@
+img {
+    max-width: 100%;
+}
+
+@media screen and (min-width: 800px) {
+    body {
+        border-left: 4px solid #f9f9f9;
+        border-right: 4px solid #f9f9f9;
+        padding: 1rem 2rem;
+    }
+
+    .IntroWrapper {
+        display: flex;
+        gap: 0 20px;
+        flex: 1 1 auto;
+        align-items: center;
+    }
+
+
+    /*
+    Important point:
+
+    flex: 1 1 auto; here does nothing useful unless .IntroWrapper itself is also a flex item inside another flex container. And in this case .IntroWrapper is not wrapped by another flex-container.
+
+    Why?
+
+    Because the flex property only affects flex items, not flex containers themselves.
+    */
+
+    .MoneyShot,
+    .IntroText {
+        margin: 0;
+        flex: 1 1 50%;
+    }
+
+    /*
+    What each value does
+    flex-basis: 50%
+
+    Each item starts with a width of 50% of the container.
+
+    So initially:
+
+    .IntroText → 50%
+    .MoneyShot → 50%
+
+    They try to split the space equally.
+
+    flex-grow: 1
+
+    If extra space is available, both items can grow equally.
+
+    Example:
+
+    If the container becomes wider, both elements expand evenly.
+
+    flex-shrink: 1
+
+    If there isn’t enough space, both items are allowed to shrink equally.
+
+
+    So the real behavior is:
+
+    Start at 50%
+    Share remaining space equally (flex-grow: 1)
+    Shrink equally if necessary (flex-shrink: 1)
+
+    which results in both taking the same amount of space.
+
+    */
+
+
+    .MoneyShotImg {
+        filter: drop-shadow(0 0 20px #0008);
+        border: 0;
+    }
+
+    .IntroText {
+        padding: 0.5rem;
+        font-size: 2.5rem;
+        text-align: left;
+        position: relative;
+    }
+
+    .Ingredients {
+        font-size: 0.9rem;
+        float: right;
+        padding: 1rem;
+        margin: 0 0 0.5rem 1rem;
+        border-radius: 3px;
+        background-color: #ffffdf;
+        border: 9px solid #debb71;
+    }
+
+    .Ingredients h3 {
+        margin: 0;
+    }
+}
